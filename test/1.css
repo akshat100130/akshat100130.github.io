@@ -209,6 +209,7 @@
     display: inline;
     padding:15px;
 }
+
 .team-area img{
     height:25px;
     width:25px;
@@ -252,12 +253,37 @@
 ### FOOTER 
 #########
 */
-.logo-f{
+
+.footer-top{
+    padding: 80px;
+    color:white;
+    background-color: rgb(40, 11, 41);
+}
+
+.footer-top .logo-f{
     height: 50px;
     width: 100px;
 }
-.brand-name-f{
+
+.footer-top .brand-name-f{
+    text-decoration: none;
     color:white;
     padding-left: 2px;
     font-weight: 600;
+}
+
+.footer-top .social-f{
+    list-style: none;
+    margin :25px 20px;
+    padding :0px;
+}
+
+.footer-top .social-f li{
+    display: inline;
+    padding:15px;
+}
+
+.footer-top a{
+    color:white;
+    text-decoration: none;
 }
