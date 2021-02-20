@@ -3,21 +3,36 @@
 
 .body{
     margin:0px;  
-  
+    font-family: 'Montserrat', sans-serif;
     font-size: 2em;
 }
 
 .stars{
     position: relative;
 }
-.heading1 h1{
+
+.heading1{
+    color: white;
     position: absolute;
     margin-top: -27%;
-    left: 42%;
+    left: 23%;
     /* margin-top: auto;
     margin-bottom: auto; */
 }
-
+.heading1 h1{
+    font-size: 110px;
+    letter-spacing: 15px;
+}
+.heading2{
+    color: white;
+    position: absolute;
+    margin-top: -15%;
+    left: 23%;
+    /* margin-top: auto;
+    margin-bottom: auto; */
+    /* letter-spacing: 2px;
+    word-spacing: 3px; */
+}
 /* 
 ########
 ### Navbar 
@@ -50,6 +65,7 @@
 
 .navbar-light .navbar-nav .nav-link {
     color: rgb(255 255 255);
+    padding-right: 15px;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
@@ -251,6 +267,10 @@
     padding: 15px 5px;
 }
 
+.choose-us .card:hover{
+    background-color: #fcf3e8;
+}
+
 /* 
 #########
 ### TEAM 
@@ -297,7 +317,7 @@
 
 .team-area li{
     display: inline;
-    padding:15px;
+    padding:10px;
 }
 
 .team-area .card-img-top{
@@ -307,9 +327,22 @@
 }
 
 .team-image{
-    height: 250px;
-    width: 250px;
+    height: 70%;
+    width: 70%;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100%;
+
 }
+
+.team-social{
+    height: 20px;
+    width: 20px;
+}
+
+
 /* 
 #########
 ### NEWSLETTER
@@ -370,13 +403,14 @@
 
 .footer-top .social-f{
     list-style: none;
-    margin :25px 20px;
-    padding :0px;
+    /* margin :25px 20px;
+    padding :0px; */
 }
 
 .footer-top .social-f li{
     display: inline;
-    padding:15px;
+    padding-right: 15px;
+    /* padding:15px; */
 }
 
 .footer-top a{
@@ -388,6 +422,17 @@
     color: #eddbc6;
 }
 
+.f-icon{
+    height: 25px;
+    width: 25px;
+}
+
+.address{   
+    margin-bottom:4px;
+}
+.address h5{
+    margin-bottom: 4px;
+}
 /* 
 #########
 ### FOOTER-BOTTOM 
