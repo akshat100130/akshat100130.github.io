@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
 .body{
     margin:0px;  
   
@@ -20,7 +23,9 @@
 ### Navbar 
 ########
 */
-
+.clr{
+    background-color: rgb(40, 11, 41);
+}
 .brand-name{
     color:white;
     font-weight: 600;
@@ -82,7 +87,7 @@
 #########
 */
 
-.services-area{
+/* .services-area{
     padding: 80px;
     color:white;
     background-color: #2a0c2a;
@@ -105,6 +110,10 @@
     color: black;
 }
 
+.c-height{
+    height: 350px;
+}
+
 .card-img-top{
     max-width: 60px;
     max-height: 60px;
@@ -123,6 +132,86 @@
 }
 .service-cards .card:hover{
     background-color: #fcf3e8;
+} */
+
+.services-area{
+    padding: 80px;
+    color:white;
+    background-color: #2a0c2a;
+}
+
+.services-area .section-title{
+    text-align: center;
+}
+
+.services-area .section-title span{
+    padding-bottom: 8px;
+    color: #eddbc6;
+}
+
+.services-area .section-title h2{
+    margin-bottom: 16px;
+}
+
+.services-area .card-title{
+    color: black;
+    text-align: center;
+}
+.services-area .card-text{
+    color: black;
+    text-align: center;
+}
+
+.card-img-top{
+    max-width: 80px;
+    max-height: 80px;
+    height: auto;
+    width: auto;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 7px;
+    margin-top: 5px;
+}
+
+.service-cards .card:hover{
+    background-color: #fcf3e8;
+}
+
+.centr-allign{       
+	
+	justify-content: center;
+	align-items: center;
+}
+
+.centr-allign .card-text{
+    height: 140px !important;
+    text-overflow:auto;
+}
+/*
+##########
+### Outsourcing
+#########
+*/
+
+.outsourcing{
+    padding: 80px;
+    color:white;
+    background-color: #2a0c2a;
+}
+
+.outsourcing-title{
+    text-align: center;
+}
+
+.outsourcing-title span{
+    padding-bottom: 8px;
+    color: #eddbc6;
+}
+
+.outsourcing-title h2{
+    margin-bottom: 16px;
 }
 
 /*
@@ -144,6 +233,7 @@
 
 .choose-us-title h2{
     margin-bottom: 16px;
+    color:white;
 }
 
 .choose-us-img{
@@ -177,7 +267,7 @@
     text-align: center;
 }
 
-.team-title .span{  
+.team-title span{  
     color: #eddbc6;
 }
 
@@ -210,9 +300,15 @@
     padding:15px;
 }
 
-.team-area img{
-    height:25px;
-    width:25px;
+.team-area .card-img-top{
+    height:250px;
+    width: 250px;
+    border-radius: 10px;
+}
+
+.team-image{
+    height: 250px;
+    width: 250px;
 }
 /* 
 #########
@@ -250,12 +346,12 @@
 
 /* 
 #########
-### FOOTER 
+### FOOTER-TOP
 #########
 */
 
 .footer-top{
-    padding: 80px;
+    padding: 60px;
     color:white;
     background-color: rgb(40, 11, 41);
 }
@@ -287,3 +383,53 @@
     color:white;
     text-decoration: none;
 }
+
+.footer-top h3{
+    color: #eddbc6;
+}
+
+/* 
+#########
+### FOOTER-BOTTOM 
+#########
+*/
+
+.footer-bottom .container-fluid{   
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;   
+}
+
+.footer-bottom .align-f{
+    text-align: center;
+    margin: 0;
+}
+
+.footer-bottom{
+    color:white;
+    background-color: rgb(32, 8, 32);
+}
+
+.c-top{
+    padding-top: 7px;
+    padding-bottom: 4px;
+    margin:0px;
+}
+
+.c-top a{
+    text-decoration: none;
+    color: #eddbc6;
+}
+
+.c-top a:hover{
+    text-decoration: none;
+    color: white;
+}
+
+.c-bottom p{
+    color:#eddbc6; 
+    margin: 0px;
+    padding-bottom: 7px;
+}
+
