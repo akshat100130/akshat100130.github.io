@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 .body{
     margin:0px;  
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 2em;
 }
 
@@ -11,27 +11,71 @@
     position: relative;
 }
 
-.heading1{
-    color: white;
-    position: absolute;
-    margin-top: -27%;
-    left: 23%;
-    /* margin-top: auto;
-    margin-bottom: auto; */
-}
-.heading1 h1{
+
+@media(min-width:1100px){
+    .head{
+        position: absolute;
+        top: 35%;
+        min-width: 100% !important;
+        
+        padding-right: ;
+    }
+    .heading1{
+        color: white;
+        
+        /* margin-top: auto;
+        margin-bottom: auto; */
+    }
+    .heading1 h1{
     font-size: 110px;
     letter-spacing: 15px;
 }
 .heading2{
     color: white;
-    position: absolute;
-    margin-top: -15%;
-    left: 23%;
+   
     /* margin-top: auto;
     margin-bottom: auto; */
     /* letter-spacing: 2px;
     word-spacing: 3px; */
+}
+}
+@media(max-width:500px){
+    .head{
+        position: absolute;
+        top: 20%;
+        min-width: 100% !important;
+        
+        padding-right: ;
+    }
+    .card-text{
+        overflow: scroll;
+    }
+    .heading1{
+        color: white;
+      
+        /* margin-top: auto;
+        margin-bottom: auto; */
+    }
+    .heading1 h1{
+        font-size: 40px;
+    }
+    .heading2{
+        color: white;
+       
+        
+        /* margin-top: auto;
+        margin-bottom: auto; */
+        /* letter-spacing: 2px;
+        word-spacing: 3px; */
+    }
+    .heading2 h3{
+        font-size: 15px;
+    }
+
+}
+
+@media(min-width:500px){
+
 }
 /* 
 ########
@@ -153,7 +197,7 @@
 .services-area{
     padding: 80px;
     color:white;
-    background-color: #2a0c2a;
+    background-color: #16161A;
 }
 
 .services-area .section-title{
@@ -214,7 +258,7 @@
 .outsourcing{
     padding: 80px;
     color:white;
-    background-color: #2a0c2a;
+    background-color: #16161A;
 }
 
 .outsourcing-title{
@@ -239,7 +283,7 @@
 .choose-us{
     padding: 80px;
     color:white;
-    background-color: #2b0d2b;
+    background-color: #16161A;
 }
 
 .choose-us-title span{
@@ -477,4 +521,67 @@
     margin: 0px;
     padding-bottom: 7px;
 }
+#style-7::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #25103b;
+	border-radius: 10px;
+}
 
+#style-7::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #8a5ffd;
+}
+
+#style-7::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-image: -webkit-gradient(linear,
+									   left bottom,
+									   left top,
+									   color-stop(0.44, rgb(122,153,217)),
+									   color-stop(0.72, rgb(73,125,189)),
+									   color-stop(0.86, rgb(28,58,148)));
+}
+.cursor {
+    display: none;
+  }
+  
+  @media (any-pointer: fine) {
+    .cursor,
+    .cursor-sphere {
+      display: block;
+      position: fixed;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+    }
+  
+    .cursor-sphere__inner {
+      fill: var(--cursor-sphere-fill);
+      stroke: var(--cursor-sphere-stroke);
+      stroke-width: var(--cursor-sphere-stroke-width);
+      opacity: 0.7;
+      -webkit-animation: rotationAnim 3s linear infinite;
+              animation: rotationAnim 3s linear infinite;
+      transform-origin: center;
+    }
+  
+    .cursor__path {
+      fill: var(--cursor-fill);
+    }
+  
+    @-webkit-keyframes rotationAnim {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  
+    @keyframes rotationAnim {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  }
+  /* Cursor CSS End */
