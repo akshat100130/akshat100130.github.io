@@ -31,6 +31,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+  <!-- Fonts -->
+  <!-- Side-Navbar -->
+  <link rel="stylesheet" href="side-nav/style.css">
+  <script src="side-nav/script.js"></script>
+  <!-- Side-Navbar -->
+  <script src="https://kit.fontawesome.com/d94e9b5196.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -79,6 +85,19 @@
   </div>
 
   <!-- Navbar -->
+
+  <!-- Side-Navbar -->
+
+  <!-- <div id="dot-nav" class="container-fluid">
+    <ul>
+      <li class="active" title="Home"><a href="#home"></a></li>
+      <li class="" title="About"><a href="#about"></a></li>
+      <li class="" title="Projects"><a href="#projects"></a></li>
+      <li class="" title="Contact"><a href="#contact"></a></li>
+    </ul>
+  </div> -->
+
+  <!-- Side-Navbar -->
 
   <!-- Main -->
 
@@ -186,7 +205,10 @@
   </section>
 
   <div class="parallax1">
-
+    <h2 style="text-align: center;padding-top: 5vh;color: white; opacity: 0.95; font-family: raleway;font-weight: 700; letter-spacing: 0.1vh;">''At its heart, engineering is about using science to find creative, practival solutions. It is a noble profession.''</h2>
+    <h3 style="text-align: center;color: white; opacity: 0.95; font-family: raleway;font-style: italic;">- Queen Elizabeth II</h3>
+    <h2 style="text-align: center;padding-top: 4vh;color: white; opacity: 0.95; font-family: raleway;font-weight: 700; letter-spacing: 0.1vh;">'' Ghanta! ''</h2>
+    <h3 style="text-align: center;color: white; opacity: 0.95; font-family: raleway;font-style: italic;">- Engineers</h3>
   </div>
 
   <!-- Outsourcing -->
@@ -201,7 +223,11 @@
     <div class="container">
       <div class="row align-items-center">
 
-        <div class="col-lg-6">
+        <div class="col-lg-6 col-sm-12 big-i">
+          <div class="about-img"><img src="resources/outsourcing/1.jpg" alt="Image"></div>
+        </div>
+
+        <div class="col-lg-6 col-sm-12 left_section">
 
           <p>We undertake project deployment, project development, project marketing, project planning and completion,
             and
@@ -216,7 +242,7 @@
             your company’s needs in a fast, cost-efficient way.
           </p>
 
-          <h5>Our outsourcing model:</h5>
+          <h5>Our outsourcing model :</h5>
 
           <ul>
             <li>Clarify Project Requirements</li>
@@ -228,16 +254,13 @@
 
         </div>
 
-        <div class="col-lg-6">
-          <div class="about-img"><img src="resources/outsourcing/OUTSOURCING.svg" alt="Image"></div>
-        </div>
-
       </div>
     </div>
   </section>
 
   <div class="parallax2">
-
+    <h2 style="text-align: center;padding-top: 10vh;color: white; opacity: 0.95; font-family: raleway;font-weight: 700; letter-spacing: 0.1vh;">''Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, tempore a. Assumenda, doloribus.''</h2>
+    <h3 style="text-align: center;color: white; opacity: 0.95; font-family: raleway;font-style: italic;">- Dukhi web developer</h3>
   </div>
   <!-- Why choose Us -->
 
@@ -251,20 +274,20 @@
     <div class="container">
       <div class="row align-items-center">
 
-        <div class="col-lg-6 big-i">
+        <div class="col-lg-6 col-sm-12 big-i">
           <div class="choose-img"><img src="resources/choose_us/big.jpg" alt="Image"></div>
         </div>
 
-        <div class="col-lg-6 col-xs-10">
+        <div class="col-lg-6 col-sm-12 left_section">
 
           <div class="choose-us-cards">
 
             <div class="c-box">
               <div class="row g-0">
-                <div class="col-md-3">
+                <div class="col-md-2 col-lg-3">
                   <img src="resources/choose_us/detail.svg" alt="..." class="choose-us-img">
                 </div>
-                <div class="col-md-9">
+                <div class="col-md-10 col-lg-9">
                   
                     <h5 class="card-title">Attention to Detail</h5>
                     <p class="card-text">We offer highly personalized services, and in the process need to make sure the
@@ -277,10 +300,10 @@
 
             <div class="c-box">
               <div class="row g-0">
-                <div class="col-md-3">
+                <div class="col-md-2 col-lg-3">
                   <img src="resources/choose_us/transparency.svg" alt="..." class="choose-us-img">
                 </div>
-                <div class="col-md-9">
+                <div class="col-md-10 col-lg-9"">
                   
                     <h5 class="card-title">Transparency</h5>
                     <p class="card-text">With constant progress updates, we aim to achieve transparency so that our
@@ -292,10 +315,10 @@
 
             <div class="c-box">
               <div class="row g-0">
-                <div class="col-md-3">
+                <div class="col-md-2 col-lg-3">
                   <img src="resources/choose_us/relationship.svg" alt="..." class="choose-us-img">
                 </div>
-                <div class="col-md-9">
+                <div class="col-md-10 col-lg-9">
                   
                     <h5 class="card-title">Relationship Management</h5>
                     <p class="card-text">Our team believes in having a very amiable relationship with all our clients,
@@ -314,101 +337,64 @@
 
   <!-- Footer -->
 
-  <footer class="footer-top">
+  <section class="footer">
     <div class="container">
-      <div class="row">
-
-        <div class="col-lg-3 col-md-6">
-          <div class="single-widget">
-
-            <img src="resources/logo/11.png" alt="Image" class="logo-f">
-            <span class="brand-name-f">INVENTEURS</span>
-
-            <br>
-            <br>
-            <p>WE CREATE. WE TRANSFORM. WE INNOVATE.</p>
-            <ul class="social-f">
-              <li><a target="_blank" href="https://www.facebook.com/InventeursTech"><img
-                    src="resources/footer/footer-face.svg" alt="" class="f-icon"></a></li>
-              <li><a target="_blank" href="https://twitter.com/Inventeurs1"><img
-                    src="resources/footer/footer-twitter.svg" alt="" class="f-icon"></a></li>
-              <li><a target="_blank" href="https://www.instagram.com/inventeurs_tech/"><img
-                    src="resources/footer/footer-insta.svg" alt="" class="f-icon"></a></li>
-              <li><a target="_blank" href="https://www.linkedin.com/company/inventeurs/"><img
-                    src="resources/footer/footer-link.svg" alt="" class="f-icon"></a></li>
-            </ul>
+      <div class="row f-top">
+        <div class="col-lg-4 col-md-4 col-sm-10">
+          <div class="footer-b">
+            <img src="resources/logo/11.png" alt="Image" class=>
+            <span>INVENTEURS</span>
           </div>
+            
+          <p>WE CREATE. WE TRANSFORM. WE INNOVATE.</p>
         </div>
 
-        <div class="col-lg-3 col-md-6">
-          <div class="single-widget">
-            <h3>Services</h3>
-            <ul>
-              <li><a href="service-details\index.htm">Chatbox</a></li>
-              <li><a href="service-details\index.htm">Marketing Solutions</a></li>
-              <li><a href="service-details\index.htm">App Development</a></li>
-              <li><a href="service-details\index.htm">Web Development</a></li>
-              <li><a href="service-details\index.htm">AI/ML Solutions</a></li>
-            </ul>
-          </div>
+        <div class="col-lg-4 col-md-4 col-sm-10">
+          <h4>OTHER</h4>
+          <ul>
+            <li><a href=""></i>Nutrical</a></li>
+            <li><a href=""></i>Contact Us</a></li>
+            <li><a href=""></i>Career</a></li>
+            <li><a href=""></i>Development</a></li>
+            <li><a href=""></i>Blogs</a></li>
+          </ul>
         </div>
+        
+        <div class="col-lg-4 col-md-4 col-sm-10">
+          <h4>CONTACT</h4>
+          <ul>
+            <li>
+              <a href="tel:88005 60034">(+91) 8800560034</a>
+            </li>
+            <li>
+              <a href="tel:91686 25004">(+91) 91686 25004</a>
+            </li>
 
-        <div class="col-lg-3 col-md-6">
-          <div class="single-widget">
-            <h3>Important Links</h3>
-            <ul>
-              <li><a href=""></i>Nutrical</a></li>
-              <li><a href=""></i>Contact Us</a></li>
-              <li><a href=""></i>Career</a></li>
-              <li><a href=""></i>Development</a></li>
-              <li><a href=""></i>Blogs</a></li>
-            </ul>
-          </div>
+            <li>
+              <a href="mailto:startupinventeurs@gmail.com">startupinventeurs@gmail.com</a>
+            </li>
+
+            <li class="address">
+              Jalgaon, Maharashtra, India
+            </li>
         </div>
-
-        <div class="col-lg-3 col-md-6">
-          <div class="single-widget">
-            <h3>Information</h3>
-            <ul class="information">
-
-              <li class="address">
-                <h5>Phone</h5>
-                <a href="tel:88005 60034">(+91) 8800560034</a>
-                <br>
-                <a href="tel:91686 25004">(+91) 91686 25004</a>
-              </li>
-
-              <li class="address">
-                <h5>Email</h5>
-                <a href="mailto:startupinventeurs@gmail.com">startupinventeurs@gmail.com</a>
-              </li>
-
-              <li class="address">
-                <h5>Address</h5>Jalgaon, Maharashtra, India
-              </li>
-
-            </ul>
-          </div>
-        </div>
-
       </div>
-    </div>
-
-  </footer>
-
-  <!-- Footer bottom -->
-
-  <footer class="footer-bottom">
-    <div class="container-fluid c-bottom">
-      <div class="row">
-        <div class="col-lg-12 align-f">
+      
+      <div class="row social">
+        <div class="col-12">
+          <ul>
+            <li><a href="https://www.instagram.com/inventeurs_tech/"><i class="fab fa-instagram"></i></li></a>
+            <li><a href="https://twitter.com/Inventeurs1"><i class="fab fa-twitter"></i></li></a>
+            <li><a href="https://www.linkedin.com/company/inventeurs/"><i class="fab fa-linkedin-in"></i></li></a>
+            <!-- <li><i class="fab fa-facebook"></i></li> -->
+          </ul>
+        </div>
+        <div class="col-12">
           <p>Copyright © 2021 INVENTEURS. All Rights Reserved</p>
         </div>
       </div>
-
     </div>
-  </footer>
-
+  </section>
 
 </body>
 

@@ -9,7 +9,10 @@
     --back:#16161A;
     --back-text:#707070;
 }
-
+::selection {
+    color: var(--back);
+    background: white;
+  }
 /* 
 ########
 ### Navbar 
@@ -19,6 +22,7 @@
 #navbaar{
     background-color: var(--back);
     height:10vh;
+    
 }
 .clr{
     background-color: var(--back);
@@ -36,6 +40,9 @@
     opacity: 0.9;
 }
 
+.navbar{
+    z-index: 69;
+}
 .navbar-nav{
     margin-left:auto;
 }
@@ -54,39 +61,48 @@
     padding: 2vh;
     text-transform: uppercase;
 }
-
+.nav-item{
+    text-align: center;
+}
 .navbar-light .navbar-nav .nav-link:hover {
     color: var(--back-text);
 }
-
+.navbar-light .navbar-toggler-icon {
+    background-image: url("resources/navbar/meat.svg");
+    opacity: 0.8;
+}
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0rem;
+}
 /* 
 ########
 ### TITLE
 ########
 */
-
+.common{
+    padding:8vh 8vw;
+}
 .title{
     text-align: center;
-    margin-bottom: 4em;
+    margin-bottom: 6vh;
 }
 .title h1{
     color: var(--back-text);
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
-    font-size: 4em;
+    font-size: 8vh;
     opacity: 0.15;
     text-transform: uppercase;
 }
 .title h3{
-    margin-top: -32px;
+    margin-top: -31px;
     color: white;
     opacity: 0.8;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 2.2em;
+    font-weight: 500;
+    font-size: 3.5vh;
     text-transform: uppercase;
 }
-
 /* 
 ########
 ### Main
@@ -103,12 +119,17 @@
 .rightside{
     width:100%;
     height: 75vh; 
+    z-index: 2;
 }
 .leftside{
     background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/215059/iceland.jpg");
-    background-color:  rgba(0, 0, 0, 0.4);
     background-repeat: no-repeat;
     background-size: cover;
+}
+.overlay{
+    position: absolute;
+    background: rgba(0,0,0,0.5);
+    opacity: 1;
 }
 .rightside{
     background-color: black;
@@ -136,6 +157,57 @@
     font-size: 1.8vh;
 }
 
+@media screen and (min-width:320px){
+    .leftside{
+        height: 40vh;
+    }
+    .rightside{
+        height:90vh;
+    }
+    .leftside h1{
+        white-space: normal;
+        margin-top: 0;
+        padding: 10vh 8vw;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 5vh;
+        letter-spacing: 2px;
+    }
+    .rightside p{
+        white-space: normal;
+        margin-top: 0;
+        padding: 5vh 12vw;
+        color: white;
+        font-family: 'Raleway', sans-serif;
+        word-spacing: 1px;
+        letter-spacing: 0.5px;
+        opacity: 0.9;
+        font-weight: 300;
+        font-size: 2.1vh;
+    }
+    .common{
+        padding:7vh;
+    }
+    .services-area{
+        margin-top: 265px;
+    }
+    .title h1 {
+        
+        font-size: 4.3vh;
+    }
+    .title h3 {
+        
+        margin-top: -20px;
+        font-size: 2.5vh;
+    }
+    .c-box .choose-us-img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 1.5vh;
+    }
+}
 @media screen and (min-width:375px){
     .leftside{
         height: 50vh;
@@ -172,21 +244,19 @@
         margin-top: 265px;
     }
     .title h1 {
-        color: var(--back-text);
-        font-family: Montserrat, sans-serif;
-        font-weight: 800;
-        font-size: 2.2em;
-        opacity: 0.15;
-        text-transform: uppercase;
+        
+        font-size: 5.3vh;
     }
     .title h3 {
+        
         margin-top: -22px;
-        color: white;
-        opacity: 0.8;
-        font-family: Montserrat, sans-serif;
-        font-weight: 400;
-        font-size: 1.8em;
-        text-transform: uppercase;
+        font-size: 3vh;
+    }
+    .c-box .choose-us-img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 1.5vh;
     }
 }
 @media screen and (min-width:425px){
@@ -225,21 +295,19 @@
         margin-top: 230px;
     }
     .title h1 {
-        color: var(--back-text);
-        font-family: Montserrat, sans-serif;
-        font-weight: 800;
-        font-size: 2.2em;
-        opacity: 0.15;
-        text-transform: uppercase;
+        
+        font-size: 6.5vh;
     }
     .title h3 {
-        margin-top: -22px;
-        color: white;
-        opacity: 0.8;
-        font-family: Montserrat, sans-serif;
-        font-weight: 400;
-        font-size: 1.8em;
-        text-transform: uppercase;
+        
+        margin-top: -28px;
+        font-size: 4vh;
+    }
+    .c-box .choose-us-img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 2vh;
     }
 }
 @media screen and (min-width:768px){
@@ -257,7 +325,7 @@
         opacity: 0.9;
         font-weight: 300;
         font-size: 2.1vh;
-
+        z-index: 1;
     }
     .leftside h1{
         white-space: normal;
@@ -351,21 +419,27 @@
 }
 
 .ser-box{
-    padding-bottom: 2em;
+    padding-bottom: 2.5vh;
 }
 
 
 .services-area .card-title{
     /* color:#eeedde; */
     color:white;
-    opacity: 0.85;
+    opacity: 0.9;
     text-align: center;
     text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 2vh;
+    font-weight: 600;
+    margin:2vh 0vh 1vh 0vh;
 }
 .services-area .card-text{
     color:#c4c4c4;
     text-align: center;
-    font-size: 1.8vh;
+    font-size: 1.9vh;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
 }
 
 .card-img-top{
@@ -394,7 +468,7 @@
     background-image: url("resources/parallax/1.jpg");
   
     /* Set a specific height */
-    height: 30vh;
+    height: 40vh;
   
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -429,6 +503,33 @@
     background-color: var(--back);
 }
 
+.outsourcing h5{
+    color:white;
+    opacity: 0.9;
+    /* text-align: center; */
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 2vh;
+    font-weight: 600;
+    margin:2vh 0vh 1vh 0vh;
+}
+.outsourcing p{
+    color:#c4c4c4;
+    /* text-align: center; */
+    font-size: 1.9vh;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+.outsourcing li{
+    color:#c4c4c4;
+    /* text-align: center; */
+    font-size: 1.9vh;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+.left_section{
+    padding:3vh 0vh 0vh 2.5vh;
+}
 /*
 ##########
 ### Choose us
@@ -443,34 +544,43 @@
 .c-box{
     padding: 2vh;
 }
+.big{
+    padding-right: 2vh;
+}
 .big-i img{
     width: 100%;
     height: 100%;
     opacity: 0.75;
-    border-radius: 15px;
+    border-radius: 2%;
 }
 .choose-us-img{
-    max-width: 13vh;
-    max-height: 13vh;
+    max-width: 12vh;
+    max-height: 12vh;
     height: auto;
     width: auto;
     
-    padding: 1vh;
+    padding: 1vh 0vh 0vh 1vh;
     margin-top: 5px;
-    opacity: 0.8; 
+    opacity: 0.9; 
 }
 
 .c-box .card-title{
-    color: white;
-    opacity: 0.85;
-    text-align: left;
+    color:white;
+    opacity: 0.9;
+    /* text-align: center; */
     text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 2vh;
+    font-weight: 600;
+    /* margin:2vh 0vh 1vh 0vh; */
 }
 
 .c-box .card-text{
     color:#c4c4c4;
-    text-align: left;
-    font-size: 1.8vh;
+    /* text-align: center; */
+    font-size: 1.9vh;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
 }
 /* 
 #########
@@ -478,97 +588,167 @@
 #########
 */
 
-.footer-top{
-    padding: 60px;
-    color:white;
-    background-color: var(--back);
+.footer{
+    padding: 7vh 7vh 3vh 7vh;
+    background-color: #101010;
 }
-
-.footer-top .logo-f{
-    height: 50px;
-    width: 100px;
+.footer-b{
+    padding-bottom:2vh;
 }
-
-.footer-top .brand-name-f{
-    text-decoration: none;
-    color:white;
-    padding-left: 2px;
-    font-weight: 600;
+.footer img{
+    height:7vh;
+    width:14vh;
 }
-
-.footer-top .social-f{
-    list-style: none;
-    /* margin :25px 20px;
-    padding :0px; */
-}
-
-.footer-top .social-f li{
-    display: inline;
-    padding-right: 15px;
-    /* padding:15px; */
-}
-
-.footer-top a{
-    color:white;
-    text-decoration: none;
-}
-
-.footer-top h3{
-    color: #eddbc6;
-}
-
-.f-icon{
-    height: 25px;
-    width: 25px;
-}
-
-.address{   
-    margin-bottom:4px;
-}
-.address h5{
-    margin-bottom: 4px;
-}
-/* 
-#########
-### FOOTER-BOTTOM 
-#########
-*/
-
-.footer-bottom .container-fluid{   
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;   
-}
-
-.footer-bottom .align-f{
-    text-align: center;
-    margin: 0;
-}
-
-.footer-bottom{
-    color:white;
-    background-color: var(--back);
-}
-
-.c-top{
-    padding-top: 7px;
-    padding-bottom: 4px;
-    margin:0px;
-}
-
-.c-top a{
-    text-decoration: none;
-    color: #eddbc6;
-}
-
-.c-top a:hover{
-    text-decoration: none;
+.footer span{
+    font-family: 'Montserrat',sans-serif;
     color: white;
+    font-weight: 600;
+    font-size: 2.5vh;
+}
+.footer p{
+    font-family: 'Montserrat',sans-serif;
+    color: white;
+    font-weight:500;
+    font-size: 1.7vh;
+}
+.footer h4{
+    color: white;
+    opacity: 0.9;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 2.5vh;
+    font-weight: 600;
+
+    margin-bottom: 2vh;
 }
 
-.c-bottom p{
-    color:#eddbc6; 
-    margin: 0px;
-    padding-bottom: 7px;
+.footer .f-top ul{
+    margin:0;
+    margin-left:-32px;
+}
+.footer .f-top a{
+    color: white;
+    opacity: 0.9;
+    text-decoration: none;
+    border-bottom: 1px solid #c4c4c4;
+    /* border-left: 1px solid #c4c4c4; */
+    padding-bottom: 2px;
+    padding-left: 2px;
+}
+.footer .f-top li{
+    list-style: none;
+    color: white;
+    opacity: 0.9;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 1.7vh;
+    margin-bottom: 1vh;
+   
+}
+.footer .f-top a:hover{
+    list-style: none;
+    color: #c4c4c4;
+    /* opacity: 0.9; */
+    font-family: 'Montserrat',sans-serif;
+    font-size: 1.7vh;
+    margin-bottom: 1vh;
+    /* border-left: 1px solid #707070; */
+    border-bottom: 1px solid #707070;
+    padding-bottom: 4px;
+    padding-left: 4px;
+}
+.social{
+    padding-top:5vh;
+}
+.social ul{
+    text-align: center;
+    margin-left: -32px;
+}
+.social li{
+    display:inline;
+    padding: 0vh 0.5vh;
+}
+
+.fa-instagram {
+    
+    color: white;
+    font-size: 18px;
+    background-color: #101010;
+    padding: 10px ;
+    border: 2px solid white;
+    border-radius: 100%;
+    
+}
+.fa-instagram:hover {
+    
+    color:#101010;
+    font-size: 18px;
+    background-color: white;
+    padding: 10px ;
+    border: 2px solid white;
+    border-radius: 100%;
+    
+}
+
+.fa-linkedin-in {
+    
+    color: white;
+    font-size: 18px;
+    background-color: #101010;
+    padding: 10px ;
+    border: 2px solid white;
+    border-radius: 100%;
+    
+}
+
+.fa-linkedin-in:hover {
+    
+    color:#101010;
+    font-size: 18px;
+    background-color: white;
+    padding: 10px ;
+    border: 2px solid white;
+    border-radius: 100%;
+    
+    
+}
+.fa-twitter{
+    color: white;
+    font-size: 18px;
+    background-color: #101010;
+    padding: 10px ;
+    border: 2px solid white;
+    border-radius: 100%;
+}
+.fa-twitter:hover{
+    color:#101010;
+    font-size: 18px;
+    background-color: white;
+    padding: 10px ;
+    border: 2px solid white;
+    border-radius: 100%;
+}
+/* .fa-facebook {
+    
+    color: #101010;  
+    font-size: 35px;
+    background-color: white;
+    padding: 10px ;
+    border: 2px solid white;
+    border-radius: 100%;
+    
+}
+.fa-facebook:hover {
+    
+    color:#101010;
+    font-size: 35px;
+    background-color: white;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 100%;
+    
+} */
+.social p{
+    text-align: center;
+    padding-top: 3vh;
+    margin:0px;
+    opacity: 0.9;
 }
