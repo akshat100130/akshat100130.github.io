@@ -1,0 +1,141 @@
+:root{
+    --back:#16161A;
+    --back-text:#707070;
+}
+::selection {
+    color: var(--back);
+    background: white;
+  }
+.common{
+    padding: 8vh 8vw;
+}
+.outsourcing{
+    /* padding: 80px; */
+    color:white;
+    background-color: var(--back);
+    height: 90vh;
+}
+
+.outsourcing h5{
+    color:white;
+    opacity: 0.9;
+    /* text-align: center; */
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 2vh;
+    font-weight: 600;
+    margin:2vh 0vh 1vh 0vh;
+}
+.outsourcing p{
+    color:#c4c4c4;
+    /* text-align: center; */
+    font-size: 1.9vh;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+.outsourcing li{
+    color:#c4c4c4;
+    /* text-align: center; */
+    font-size: 1.9vh;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+.left_section{
+    padding:3vh 0vh 0vh 2.5vh;
+}
+.big{
+    padding-right: 2vh;
+}
+.big-i img{
+    width: 100%;
+    height: 100%;
+    opacity: 0.75;
+    border-radius: 2%;
+}
+/* 
+########
+### TITLE
+########
+*/
+.title{
+    text-align: center;
+    margin-bottom: 6vh;
+}
+.title h1{
+    color: var(--back-text);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 8vh;
+    opacity: 0.15;
+    text-transform: uppercase;
+}
+.title h3{
+    margin-top: -31px;
+    color: white;
+    opacity: 0.8;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 3.5vh;
+    text-transform: uppercase;
+}
+/* 
+########
+### Navbar 
+########
+*/
+
+#navbaar{
+    background-color: var(--back);
+    height:10vh;
+    
+}
+.clr{
+    background-color: var(--back);
+}
+.brand-name{
+    color:white;
+    font-weight: 600;
+}
+.img-brand {
+    height: auto;
+    width: auto;
+    max-height: 10vh;
+    max-width: 12vw;
+    margin-left: auto;
+    opacity: 0.9;
+}
+
+.navbar{
+    z-index: 69;
+}
+.navbar-nav{
+    margin-left:auto;
+}
+.heading{
+    margin-top:auto;
+    margin-left: auto;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+    padding-right: 2vw;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    opacity: 0.9;
+    font-size: 1.8vh;
+    padding: 2vh;
+    text-transform: uppercase;
+}
+.nav-item{
+    text-align: center;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    color: var(--back-text);
+}
+.navbar-light .navbar-toggler-icon {
+    background-image: url("resources/navbar/meat.svg");
+    opacity: 0.8;
+}
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0rem;
+}
