@@ -1,0 +1,53 @@
+section{
+    margin: 50px 0;
+}
+#mycart img{
+    padding: 30px;
+    background-color: #f4f9f9;
+    border-radius: 25px;
+   
+   }
+   #mycart .card{
+    border-radius: 25px; 
+    padding: 10px;
+    margin-bottom: 20px;
+    max-width: 19rem;
+    justify-content: center;
+    
+}
+#mycart .total{
+   max-width: 30rem;
+}
+input { 
+    text-align: center; 
+}
+
+/* @media screen and (min-width: 1440px)
+{
+#footer {
+    margin-top: -370px;
+    color: white;
+    font-size: 18px;
+    font-style: normal;
+    background-color: initial;
+}
+}
+@media screen and (min-width: 1024px){
+#footer {
+    margin-top: -190px;
+    color: white;
+    font-size: 18px;
+    font-style: normal;
+    background-color: #a1cae2;
+}
+}
+@media screen and (min-width: 768px)
+{
+#footer {
+    margin-top: -80px;
+    color: white;
+    font-size: 18px;
+    font-style: normal;
+    background-color: #a1cae2;
+}
+} */

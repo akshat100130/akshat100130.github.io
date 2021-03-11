@@ -1,0 +1,43 @@
+/*
+##############
+### PRODUCT INFO
+##############
+*/
+
+#product-info{
+    margin: 100px 0;
+    text-align: right;
+}
+#product-info img{
+    padding: 70px;
+}
+.product-info-bg{
+   background-color: #eff0f3;
+   background-image: none;
+}
+#product-info .carousel{
+    background-color:#a1cae2;
+    border-radius: 50px;
+} 
+
+.flex-container {
+    display: flex;
+    justify-content: flex-end;
+}
+#specifications{
+    margin: 40px 0;
+}
+#specifications .card{
+    color: white;
+    border-radius: 20px;
+    margin: 10px 0;
+}
+
+#reviews .card{
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 20px;
+}
+  
+
