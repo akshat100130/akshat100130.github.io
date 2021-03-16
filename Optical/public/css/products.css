@@ -13,27 +13,61 @@
     }
     
     #products{
-        padding-top: 50px;
+        padding-top: 20px;
         font-family: 'Roboto',sans-serif;
         
+    }
+    #products h5{
+        font-size: 1rem;
+    }
+    #products .btn{
+        font-size: 0.65rem;
     }
     .products .card{
         border-radius: 25px; 
         padding: 10px;
         font-family:  'Roboto',sans-serif;
         margin-bottom: 20px;
-        
-        
     }
     .products img{
-        padding: 30px;
+        padding: 10px;
         background-color: #f4f9f9;
-        border-radius: 25px;
+        border-radius: 5%;
 
        }
 
-    
+    #products .rating li{
+        list-style: none;
+        display: inline-block;
+    }
+    #products .rating {
+        margin: 0;
+    }
 
+    .fa-star:before {
+        content: "\f005";
+        color: #763bff;
+    }
+
+    #products h6{
+        font-family:  'Roboto',sans-serif;
+        text-align: center;
+        padding-bottom: 0.3rem;
+        color: #4d4c4c;
+        border-bottom: 2px solid #a1cae2;
+        margin-bottom: 0.7rem;
+        font-size: 1.1rem;
+    }
+    #products .form-check{
+        color: #636363;
+        font-weight: 500;
+        font-size: 0.9rem;
+    }
+#products .price-control{
+        color: #636363;
+        font-weight: 500;
+        font-size: 0.9rem;
+    }
 @media screen and (max-width:575px){
     .products .card, .filter{
         max-width: 19rem;

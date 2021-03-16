@@ -77,13 +77,20 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto float-end">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="index.html"><i class="fas fa-home fa-2x"></i></a>
+              <a class="nav-link " aria-current="page" href="index.html"><i class="fas fa-home fa-2x"></i></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="products.html"><i class="fas fa-search fa-2x"></i></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="profile.html"><i class="fas fa-user fa-2x"></i></a>
+              <div class="dropdown">
+                <a class="nav-link profile active" href="profile.html"><i class="fas fa-user fa-2x"></i></a>
+                <div class="dropdown-content">
+                  <a href="./login.html">LOGIN</a>
+                  <a href="./signup.html">SIGNUP</a>
+                  <!-- <a href="#"></a> -->
+                </div>
+              </div>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="cart.html"><i class="fas fa-shopping-cart fa-2x"></i></a>
