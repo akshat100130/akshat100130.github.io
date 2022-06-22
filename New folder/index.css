@@ -1,0 +1,1076 @@
+body{
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    width: 100vw;
+    /* overflow: auto; */
+    /* position: relative; */
+}
+::selection {
+    background:rgb(206, 204, 202);
+    color:rgb(36, 50, 68);
+}
+
+:root{
+    --back: rgb(250, 246, 243);
+    --heading: rgb(36, 50, 68);
+}
+/* ::-webkit-scrollbar {
+    width: 10px;
+  } */
+  
+  /* Track */
+  /* ::-webkit-scrollbar-track {
+
+    background: var(--back);
+  } */
+  
+  /* Handle */
+  /* ::-webkit-scrollbar-thumb {
+    background: var(--heading);
+    border-radius: 7px;
+    opacity: 0.6;
+  } */
+  
+  /* Handle on hover */
+  /* ::-webkit-scrollbar-thumb:hover {
+    background: rgb(23, 32, 44);
+  } */
+
+/* 
+#########
+####    NAVBAR 
+########
+*/
+
+#pageNavbar .navbar{
+    background-color: transparent;
+    z-index: 1;
+    /* height: 10vh; */
+}
+
+#pageNavbar .navbar-brand img{
+    height: 70%;
+    width: 70%;
+}
+
+#pageNavbar .navbar .nav-item{
+    padding-right: 2em;
+}
+
+#pageNavbar .navbar .nav-link{
+    color: #FFFFFF;
+    font-size: 1em;
+}
+
+.navbar .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(250, 246, 243)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar .navbar-toggler {
+    outline: none;
+    border-color: var(--back);
+} 
+
+/* 
+#########
+####    Main
+#########
+*/
+
+#main{
+    background-color: var(--back);
+    position: relative;
+    margin-top: -9vh;
+}
+#main .carousel-inner{
+    height: 101vh;
+}
+#main .carousel-caption{
+    color: #FFFFFF;
+    top: 55% !important;
+    transform: translateY(-50%);
+}
+#main .carousel-caption h1{
+    font-size: 55px;
+    font-weight: 400;
+}
+#main .carousel-caption .highlight{
+    font-weight: 600;
+}
+#main .carousel_row{
+    width: 38%;
+    margin: 0 auto;
+    margin-top: 3em;
+}
+#main .main_button_group #btn_type_1 button{
+    font-size: 12px;
+    background-color: var(--back);
+    border: 3px solid #FFFFFF;
+    color: var(--heading);
+    width: 160px;
+    height: 50px;
+    transition: 0.25s;
+}
+#main .main_button_group #btn_type_1 button:hover{
+    background-color: #FFFFFF;
+    font-weight: 600;
+}
+#main .main_button_group #btn_type_1 button:focus{
+    outline: none;
+    box-shadow: none;
+}
+#main .main_button_group #btn_type_2 button{
+    font-size: 12px;
+    background-color: transparent;
+    color: #FFFFFF;
+    border: 2.6px solid #FFFFFF;
+    width: 160px;
+    height: 50px;
+    transition: 0.25s;
+
+}
+#main .main_button_group #btn_type_2 button:focus{
+    outline: none;
+    box-shadow: none;
+}
+#main .main_button_group #btn_type_2 button:hover{
+
+    font-weight: 600;
+}
+/* 
+#########
+####    Section1 
+#########
+*/
+
+#section1{
+    background-color: var(--back);
+    padding:10em 5em 5em 5em;
+}
+
+#section1 .l_div{
+    width: 40%;
+}
+
+#section1 .l_div h1{
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 1.5em;
+}
+
+#section1 .l_div p{
+    font-size: 16px;
+    margin-bottom: 1em;
+}
+
+#section1 .l_div .highlight{
+    font-weight: 600;
+}
+
+#section1 .r_div img{
+    height: 50vh;
+    width: 60vw;
+}
+
+/* 
+#########
+####    Section2
+#########
+*/
+
+#section2{
+    background-color: var(--back);
+    padding: 5em 5em;
+}
+
+#section2 .l_div{
+    /* width: 40%; */
+    text-align: right;
+}
+
+#section2 .l_div h1{
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 1.5em;
+}
+
+#section2 .l_div p{
+    font-size: 16px;
+    margin-bottom: 1em;
+    text-align: right;
+}
+
+#section2 .l_div .highlight{
+    font-weight: 600;
+}
+
+#section2 .r_div img{
+    margin-left: -20%;
+    height: 50vh;
+    /* width: 60vw; */
+}
+
+/* 
+#########
+####    Section3
+#########
+*/
+
+
+#section3 {
+    background-color: var(--back);
+    padding: 5em 10em 10em 10em;
+}
+
+#section3 .card{
+    background-color: #F3EFED;
+    border: 5px solid #F3EFED;
+    padding: 30px 20px;
+    margin: 0 auto;
+    width: 60%;
+    transition: 0.25s;
+    border-radius: 7px;
+}
+
+#section3 .card:hover{
+    background-color: transparent;
+
+}
+
+/* 
+#########
+####    Team
+#########
+*/
+
+#team{
+    padding: 10em;
+    background-color: var(--back);
+    text-align: center;
+    color: var(--heading);
+}
+
+#team h1{
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 1.5em;
+}
+
+/* 
+#########
+####    Parallax
+#########
+*/
+
+#parallax{
+    /* The image used */
+    background-image: url("./assets/parallax.png");
+    filter: grayscale(80);
+    /* Full height */
+    height: 40vh;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#parallax .par_cont{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#parallax{
+    color: white;
+}
+
+#parallax .b1 h1{
+    font-size: 70px;
+    font-weight: 600;
+}
+#parallax.b2{
+    margin: 0 auto;
+}
+#parallax .b2 h1{
+    font-size: 120px;
+    font-weight: 700;
+}
+#parallax .b2 p{
+    padding-top: 24px;
+    font-size: 16px;
+}
+
+
+/* 
+#########
+####    Team
+#########
+*/
+
+#team{
+    padding: 10em 5em 5em 5em;
+    text-align: left;
+}
+
+#team h1{
+    text-align: center;
+}
+
+#team .card .img_container{
+    position: relative;
+}
+
+#team .card .card-img-top{
+    filter: grayscale(80);
+    display: block;
+    border-radius: 8px 8px 0px 0px;
+    
+}
+.h-100{
+    outline: none;
+    background-color: transparent;
+    border: 4px solid #D7EDFF;
+    border-radius: 8px;
+}
+
+#team .card .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #0000006e;
+}
+
+#team .card .img_container:hover .overlay {
+    opacity: 1;
+}
+
+#team .card .img_container:hover .card-img-top{
+    background-color: #000000;
+    opacity: 0.8;
+}
+
+#team .card .overlay_text{
+    color: white;
+    font-size: 14px;
+    position: absolute;
+    padding-right: 20px;
+    text-align: left;
+    /* background-color: #000000;
+    opacity: 0.5; */
+
+}
+.baapkadiv{
+    /* padding: 10px; */
+    padding-right: 20px;
+}
+.baapkadiv img{
+    position: relative;
+    margin-top: 170px;
+}
+
+#team .card .over_img{
+    display: block;
+    margin-top: 15%;
+}
+
+/* 
+#########
+####    Get In Touch
+#########
+*/
+
+#getInTouch{
+    background-color: var(--back);
+    padding: 5em 5em 5em 5em;
+}
+
+#getInTouch .container .row{
+    padding: 5em 5em;
+}
+
+.getInTouchCard{
+    outline: none;
+    border: none;
+    border-radius: 12px;
+    /* margin-right: 14%; */
+    /* margin-left: 14%; */
+    margin-bottom: 2%;
+
+}
+
+#getInTouch h3{
+    color: var(--heading);
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+#getInTouch p{
+    color: var(--heading);
+    font-size: 15px;
+}
+
+#getInTouch img{
+    width: 28px;
+    height: 28px;
+    margin-right: 10px;
+}
+
+#getInTouch a{
+    text-decoration: none;
+}
+#getInTouch #textf1{
+    width: 40%;
+}
+#getInTouch #textf2{
+    width: 60%;
+}
+#getInTouch input{
+    background-color: #ECECEC;
+    border: none;
+    outline: none;
+    padding: 12px 20px;
+    font-size: 13px;
+    margin-bottom: 2em;
+    border-radius: 5px;
+}
+
+#getInTouch input:hover{
+    background-color: #e6e6e6;
+}
+
+#getInTouch .btn{
+    background-color: var(--heading);
+    color: white;
+    font-size: 13px;
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+}
+#getInTouch .btn:hover{
+    background-color: rgb(28, 39, 53);
+}
+#getInTouch .btn:focus{
+    box-shadow: none;
+    outline: none;
+}
+
+#formConfirm{
+    display: none;
+    align-items: center;
+    vertical-align: middle;
+    padding-left: 12em;
+}
+
+#formConfirm h1{
+    color: var(--heading);
+    text-align: center;
+    padding: 1em;
+    padding-bottom: 0%;
+    align-items: center;
+    font-size: 29px;
+    vertical-align: middle;
+    /* display: none; */
+}
+#formConfirm lottie-player{
+    width: 40px; 
+    height: 40px;
+    vertical-align: middle;
+
+    /* display: none; */
+    /* padding-left: 11%; */
+}
+
+/* #getInTouch i{
+    padding-left: 0%;
+    padding-right: 1.6%;
+    color: var(--heading);
+    font-size: 1.5rem;
+} */
+/* 
+#########
+####    Footer
+#########
+*/
+
+#footer{
+    padding: 5em 12em;
+    background-color: var(--heading);
+    color: white;
+}
+
+#footer h3{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#footer p{
+    font-size: 13px;
+    margin-left: -10px;
+    margin-bottom: 5px;
+}
+
+#footer .footer_social{
+    margin-top: 15px;
+    margin-left: -10px;
+}
+
+#footer img{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+#footer a{
+    text-decoration: none;
+}
+
+#footer ul{
+    list-style: none;
+}
+
+#footer li a{
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+@media only screen and (max-width: 1439px){
+    #main .carousel_row {
+        width: 60%;
+        margin: 0 auto;
+        margin-top: 2em;
+    }
+    #main .carousel-inner{
+        height: 100%;
+    }
+    #section1 .r_div img {
+        margin-left: 3em;
+        height: 45vh;
+        width: 45vw;
+    }
+    #section2 .r_div img {
+        margin-left: -20%;
+        height: 50vh;
+        width: 50vw;
+        /* width: 60vw; */
+    }
+    #section3 .card {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    body{
+        width: 100vw;
+    }
+
+    #pageNavbar .navbar{
+        background-color: var(--heading);
+        padding: 10px 20px;
+        z-index: 1;
+        /* height: 10vh; */
+        margin-top: 0px;
+    }
+    
+    
+    #pageNavbar .navbar .nav-item{
+        padding-right: 0em;
+    }
+    
+    #pageNavbar .navbar .nav-link{
+        color: #FFFFFF;
+        text-align: right;
+        font-size: 1em;
+    }
+
+    #main .carousel-inner{
+        height: 100%;
+    }
+    #main .carousel_row {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 1em;
+    }
+    #section1 .r_div img {
+        margin-left: 3em;
+        height: 40vh;
+        width: 45vw;
+    }
+    #section2 .r_div img {
+        margin-left: -20%;
+        height: 45vh;
+        width: 45vw;
+        /* width: 60vw; */
+    }
+
+    #parallax {
+        height: 45vh;
+        padding: 4em 2em;
+    }
+    
+    #parallax .b1 h1 {
+        font-size: 40px;
+        font-weight: 600;
+    }
+    #parallax .b2 p {
+        padding-top: 0px;
+        font-size: 16px;
+    }
+    #parallax .b2 h1 {
+        font-size: 60px;
+        font-weight: 700;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    body{
+        width: 100vw;
+    }
+
+    /* Nav  */
+
+    #pageNavbar .navbar{
+        background-color: var(--heading);
+        padding: 10px 20px;
+        z-index: 1;
+        /* height: 10vh; */
+    }
+    
+    #pageNavbar .navbar-brand img{
+        height: 70%;
+        width: 70%;
+    }
+    
+    #pageNavbar .navbar .nav-item{
+        padding-right: 0;
+    }
+    
+    #pageNavbar .navbar .nav-link{
+        color: #FFFFFF;
+        text-align: right;
+        font-size: 1em;
+    }
+
+    /* Main  */
+
+    #main{
+        position: relative;
+        margin-top: 0vh;
+    }
+    #main .carousel-inner{
+        height: 100%;
+    }
+    #main .carousel-caption{
+        color: #FFFFFF;
+        top: 55% !important;
+        transform: translateY(-50%);
+    }
+    #main .carousel-caption h1{
+        font-size: 45px;
+        font-weight: 400;
+    }
+    #main .carousel_row{
+        width: 80%;
+        margin-top: 1em;
+    }
+    #main .main_button_group #btn_type_1 button{
+        display: none;
+    }
+    
+    #main .main_button_group #btn_type_2 button{
+        display: none;
+    }
+
+    #section1{
+        padding:2em 1em 2em 1em;
+    }
+    
+    /* ### */
+
+    #section1{
+        background-color: var(--back);
+        padding:4em 4em 2em 4em;
+    }
+    
+    #section1 .l_div{
+        width: 100%;
+    }
+    
+    #section1 .l_div h1{
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 1.5em;
+        text-align: center;
+    }
+    
+    #section1 .l_div p{
+        font-size: 15px;
+        margin-bottom: 1em;
+    }
+    
+    #section1 .r_div img{
+        height: 50vh;
+        width: 60vw;
+        /* margin-left: 5em; */
+    }
+
+    /* Section2 */
+
+    #section2{
+        background-color: var(--back);
+        padding: 0em 4em 2em 4em;
+    }
+    
+    #section2 .l_div{
+        width: 100%;
+        text-align: center;
+    }
+    
+    #section2 .l_div h1{
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 1.5em;
+        text-align: center;
+    }
+    
+    #section2 .l_div p{
+        font-size: 15px;
+        margin-bottom: 1em;
+        text-align: center;
+    }
+    
+    #section2 .r_div img{
+        height: 50vh;
+        width: 60vw;
+        margin-left: 3em;
+        margin-bottom: 2em;
+    }
+
+    /*---------------- Section3     */
+
+    #section3 {        
+        padding: 4em 1em 4em 1em;
+    }
+    
+    #section3 .card{
+        width: 100%;
+    }
+
+    /*------------ Parallax  */
+
+    #parallax{
+        height: 80vh;
+        padding: 4em 2em
+    }
+
+    #parallax .par_cont{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #parallax .b1 h1{
+        font-size: 30px;
+        font-weight: 700;
+    }
+    #parallax.b2{
+        margin: 0 auto;
+    }
+    #parallax .b2 h1{
+        font-size: 120px;
+        font-weight: 700;
+    }
+    #parallax .b2 p{
+        margin-top: 20px;
+        font-size: 14px;
+    }
+    
+
+    /*------------------- Team  */
+
+    #team{
+        padding: 4em 2em 4em 2em;
+    }
+
+    #team .card{
+        margin: 0 auto;
+    }
+    
+    /* GIT  */
+
+    #getInTouch{
+        padding: 4em 2em 4em 2em;
+    }
+    #getInTouch #textf1{
+        width: 70%;
+    }
+    #getInTouch #textf2{
+        width: 100%;
+    }
+    #getInTouch .btn{
+        background-color: var(--heading);
+        color: white;
+        font-size: 13px;
+        width: 120px;
+    }
+    
+    
+    /*-------------- footer     */
+    
+    #footer{
+        padding: 4em 4em;    
+    }
+    
+    #footer ul{
+        list-style: none;
+        margin-left: -40px;
+    }
+    
+    #footer li a{
+        text-decoration: none;
+        color: white;
+        font-size: 13px;
+        margin-bottom: 5px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    body{
+        width: 100vw;
+    }
+
+    /* Nav  */
+
+    #pageNavbar .navbar{
+        background-color: var(--heading);
+        padding: 10px 20px;
+        z-index: 1;
+        /* height: 10vh; */
+    }
+    
+    #pageNavbar .navbar-brand img{
+        height: 70%;
+        width: 70%;
+    }
+    
+    #pageNavbar .navbar .nav-item{
+        padding-right: 0em;
+    }
+    
+    #pageNavbar .navbar .nav-link{
+        color: #FFFFFF;
+        text-align: right;
+        font-size: 1em;
+    }
+
+    /* Main  */
+
+    #main{
+        position: relative;
+        margin-top: 0vh;
+    }
+    #main .carousel-inner{
+        height: 100%;
+    }
+    #main .carousel-caption{
+        color: #FFFFFF;
+        top: 45% !important;
+        transform: translateY(-50%);
+    }
+    #main .carousel-caption h1{
+        font-size: 22px;
+        font-weight: 400;
+    }
+    #main .carousel_row{
+        width: 80%;
+        margin-top: 1em;
+    }
+    #main .main_button_group #btn_type_1 button{
+        display: none;
+    }
+    
+    #main .main_button_group #btn_type_2 button{
+        display: none;
+    }
+
+    #section1{
+        padding:2em 1em 2em 1em;
+    }
+    
+    /* ### */
+
+    #section1{
+        background-color: var(--back);
+        padding:4em 4em 2em 4em;
+    }
+    
+    #section1 .l_div{
+        width: 100%;
+    }
+    
+    #section1 .l_div h1{
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 1.5em;
+        text-align: center;
+    }
+    
+    #section1 .l_div p{
+        font-size: 15px;
+        margin-bottom: 1em;
+    }
+    
+    #section1 .r_div img{
+        height: 50vh;
+        width: 60vw;
+        margin-left: 0;
+    }
+
+    /* Section2 */
+
+    #section2{
+        background-color: var(--back);
+        padding: 0em 4em 2em 4em;
+    }
+    
+    #section2 .l_div{
+        width: 100%;
+        text-align: center;
+    }
+    
+    #section2 .l_div h1{
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 1.5em;
+        text-align: center;
+    }
+    
+    #section2 .l_div p{
+        font-size: 15px;
+        margin-bottom: 1em;
+        text-align: center;
+    }
+    
+    #section2 .r_div img{
+        margin-top: -10em;
+        height: 50vh;
+        width: 60vw;
+        margin-left: 0;
+    }
+
+    /*---------------- Section3     */
+
+    #section3 {        
+        padding: 4em 1em 4em 1em;
+    }
+    
+    #section3 .card{
+        width: 100%;
+    }
+
+    /*------------ Parallax  */
+
+    #parallax{
+        height: 60vh;
+        padding: 4em 2em
+    }
+    #parallax .container .row{
+        padding: 0em 1em;
+    }
+    #parallax .par_cont{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #parallax .b1 h1{
+        font-size: 30px;
+        font-weight: 700;
+    }
+    #parallax.b2{
+        margin: 0 auto;
+    }
+    #parallax .b2 h1{
+        font-size: 70px;
+        font-weight: 700;
+    }
+    #parallax .b2 p{
+        margin-top: 10px;
+        font-size: 14px;
+    }
+    
+
+    /*------------------- Team  */
+
+    #team{
+        padding: 4em 2em 4em 2em;
+    }
+
+    #team .card{
+        margin: 0 auto;
+    }
+    
+    /* GIT  */
+
+    #getInTouch .container .row{
+        padding: 4em 2em 4em 2em;
+    }
+    #getInTouch h3{
+        font-size: 27px;
+    }
+    #getInTouch p{
+        font-size: 10px;
+    }
+    #getInTouch #textf1{
+        width: 80%;
+        font-size: 12px;
+    }
+    #getInTouch #textf2{
+        width: 100%;
+        font-size: 12px;
+    }
+    #getInTouch .btn{
+        background-color: var(--heading);
+        color: white;
+        font-size: 13px;
+        width: 120px;
+        text-align: center;
+    }
+    
+    
+    /*-------------- footer     */
+    
+    #footer{
+        padding: 4em 4em;    
+    }
+    
+    #footer ul{
+        list-style: none;
+        margin-left: -40px;
+    }
+    
+    #footer li a{
+        text-decoration: none;
+        color: white;
+        font-size: 13px;
+        margin-bottom: 5px;
+    }
+
+
+
+}
